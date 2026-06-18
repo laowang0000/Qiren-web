@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Local logs and generated QA artifacts
+logs/
+output/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Local asset source packs
+portfolio_visuals_selected.zip
+portfolio_visuals_selected/
+public/portrait_professional.png
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
