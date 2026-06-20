@@ -23,7 +23,7 @@ const contactLinks = [
 
 export function Contact() {
   return (
-    <Section id="contact">
+    <Section id="contact" scene="signal">
       <SectionHeading
         label="Contact"
         title="Connect for AI, software, and internship opportunities"

@@ -17,6 +17,19 @@ output/
 portfolio_visuals_selected.zip
 portfolio_visuals_selected/
 public/portrait_professional.png
+public/assets/site/cosmic-*.png
+
+# Local planning and design materials
+docs/superpowers/
+raw/
+temp/
+unused/
+drafts/
+screenshots-unused/
+videos/
+*.mov
+*.psd
+*.ai
 
 # Editor and OS files
 .DS_Store

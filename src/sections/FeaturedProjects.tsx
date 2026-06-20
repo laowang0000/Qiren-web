@@ -7,7 +7,7 @@ export function FeaturedProjects() {
   const featuredProjects = projects.filter((project) => project.featured);
 
   return (
-    <Section id="featured-projects">
+    <Section id="featured-projects" scene="river">
       <SectionHeading
         label="Featured Projects"
         title="Selected work to highlight first"

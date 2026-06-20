@@ -5,7 +5,7 @@ import { projects } from "../data/projects";
 
 export function Projects() {
   return (
-    <Section id="projects">
+    <Section id="projects" scene="river">
       <SectionHeading
         label="Projects"
         title="Project index"

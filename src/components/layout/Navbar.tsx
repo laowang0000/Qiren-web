@@ -44,23 +44,23 @@ export function Navbar() {
     const isActive = activeId === href.slice(1);
 
     return [
-      "rounded-full px-3 py-2 text-sm font-medium transition duration-200 hover:bg-white/[0.08] hover:text-white",
-      isActive ? "bg-white/[0.09] text-white" : "text-slate-300",
+      "rounded-full px-3 py-2 text-sm font-medium transition duration-200 hover:bg-amber-100/[0.08] hover:text-amber-50",
+      isActive ? "bg-amber-100/[0.11] text-amber-50" : "text-slate-300",
     ].join(" ");
   };
 
   return (
-    <header className="fixed inset-x-0 top-4 z-50 px-4">
+    <header className="fixed inset-x-0 top-4 z-[100] px-4">
       <nav
         className={[
-          "site-nav mx-auto w-full max-w-6xl border border-white/12 bg-ink-950/70 px-4 shadow-glass backdrop-blur-xl transition-[border-radius]",
+          "site-nav mx-auto w-full max-w-6xl border border-amber-100/20 bg-ink-950/78 px-4 shadow-glass backdrop-blur-md transition-[border-radius]",
           isOpen ? "rounded-[1.75rem]" : "rounded-full",
         ].join(" ")}
       >
         <div className="flex h-14 items-center justify-between gap-4">
           <a
             href="#home"
-            className="shrink-0 rounded-full px-2 text-sm font-semibold text-white transition hover:text-electric-cyan"
+            className="shrink-0 rounded-full px-2 text-sm font-semibold text-white transition hover:text-amber-200"
             onClick={() => setIsOpen(false)}
           >
             Ong Qi Ren
@@ -80,7 +80,7 @@ export function Navbar() {
             Contact
           </Button>
           <button
-            className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/[0.06] text-white transition hover:bg-white/[0.1] focus:outline-none focus-visible:ring-2 focus-visible:ring-electric-blue md:hidden"
+            className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-amber-100/16 bg-white/[0.06] text-white transition hover:bg-amber-100/[0.1] focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300 md:hidden"
             type="button"
             aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
             aria-expanded={isOpen}

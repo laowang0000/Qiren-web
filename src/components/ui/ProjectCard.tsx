@@ -1,4 +1,5 @@
 import type { Project } from "../../data/projects";
+import { assetUrl } from "../../utils/assetUrl";
 import { Badge } from "./Badge";
 
 type ProjectCardProps = {
@@ -13,7 +14,7 @@ export function ProjectCard({ project, variant = "standard" }: ProjectCardProps)
   return (
     <article
       className={[
-        "group flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/[0.055] shadow-glass backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:border-electric-blue/35 hover:bg-white/[0.075] hover:shadow-glow",
+        "group flex h-full flex-col overflow-hidden rounded-2xl border border-amber-100/10 bg-slate-950/45 shadow-glass backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-amber-300/35 hover:bg-slate-900/55 hover:shadow-glow",
         isFeatured ? "min-h-[36rem]" : "min-h-[30rem]",
       ].join(" ")}
     >
@@ -23,9 +24,20 @@ export function ProjectCard({ project, variant = "standard" }: ProjectCardProps)
           isFeatured ? "aspect-[16/10]" : "aspect-[16/11]",
         ].join(" ")}
       >
-        {project.image ? (
+        {project.video ? (
+          <video
+            className="h-full w-full object-cover"
+            controls
+            muted
+            preload="metadata"
+            aria-label={project.imageAlt}
+          >
+            <source src={assetUrl(project.video)} type="video/mp4" />
+            Your browser cannot play this gameplay video.
+          </video>
+        ) : project.image ? (
           <img
-            src={project.image}
+            src={assetUrl(project.image)}
             alt={project.imageAlt}
             className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
             loading="lazy"

@@ -15,9 +15,9 @@ type ButtonProps = {
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    "border-transparent bg-gradient-to-r from-electric-blue to-electric-violet text-white shadow-glow hover:shadow-[0_22px_70px_rgba(88,166,255,0.28)]",
+    "border-amber-200/35 bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 shadow-[0_18px_55px_rgba(245,158,11,0.22)] hover:shadow-[0_22px_70px_rgba(245,158,11,0.32)]",
   secondary:
-    "border-white/15 bg-white/[0.07] text-slate-100 hover:border-electric-blue/60 hover:bg-white/[0.11]",
+    "border-amber-100/18 bg-slate-950/45 text-slate-100 hover:border-amber-200/45 hover:bg-slate-900/70",
   ghost:
     "border-transparent bg-transparent text-slate-300 hover:bg-white/[0.06] hover:text-white",
 };
@@ -29,7 +29,7 @@ export function Button({
   ...props
 }: ButtonProps) {
   const classes = [
-    "inline-flex min-h-11 items-center justify-center rounded-full border px-5 py-2.5 text-sm font-semibold transition duration-200 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-electric-blue focus-visible:ring-offset-2 focus-visible:ring-offset-ink-950 disabled:cursor-not-allowed disabled:opacity-45 disabled:hover:translate-y-0",
+    "inline-flex min-h-11 items-center justify-center rounded-full border px-5 py-2.5 text-sm font-semibold transition duration-200 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-950 disabled:cursor-not-allowed disabled:opacity-45 disabled:hover:translate-y-0",
     variantClasses[variant],
     className,
   ].join(" ");

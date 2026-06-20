@@ -6,7 +6,7 @@ import { skillGroups } from "../data/skills";
 
 export function Skills() {
   return (
-    <Section id="skills">
+    <Section id="skills" scene="observatory">
       <SectionHeading
         label="Skills"
         title="Technical skill set"

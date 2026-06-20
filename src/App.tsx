@@ -1,4 +1,6 @@
+import { CosmicScene } from "./components/layout/CosmicScene";
 import { Footer } from "./components/layout/Footer";
+import { JourneyMotion } from "./components/layout/JourneyMotion";
 import { Navbar } from "./components/layout/Navbar";
 import { About } from "./sections/About";
 import { Certification } from "./sections/Certification";
@@ -12,7 +14,9 @@ import { Skills } from "./sections/Skills";
 
 export default function App() {
   return (
-    <div className="min-h-screen overflow-hidden bg-ink-950 text-slate-50">
+    <div className="site-shell min-h-screen overflow-hidden text-slate-50">
+      <CosmicScene />
+      <JourneyMotion />
       <Navbar />
       <main>
         <Hero />

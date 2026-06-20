@@ -17,7 +17,7 @@ const focusAreas = [
 
 export function About() {
   return (
-    <Section id="about">
+    <Section id="about" scene="quiet">
       <SectionHeading
         label="About"
         title="AI undergraduate building practical, data-driven software."

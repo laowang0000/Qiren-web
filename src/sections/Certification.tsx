@@ -2,12 +2,13 @@ import { Section } from "../components/layout/Section";
 import { GlassCard } from "../components/ui/GlassCard";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import { certifications } from "../data/certifications";
+import { assetUrl } from "../utils/assetUrl";
 
 export function Certification() {
   const certification = certifications[0];
 
   return (
-    <Section id="certification">
+    <Section id="certification" scene="signal">
       <SectionHeading
         label="Certification"
         title="Professional learning"
@@ -38,7 +39,7 @@ export function Certification() {
         </div>
         <figure className="overflow-hidden rounded-2xl border border-white/10 bg-white p-2 shadow-glass">
           <img
-            src="/assets/site/google_analytics_certificate.png"
+            src={assetUrl("/assets/site/google_analytics_certificate.png")}
             alt="Google Analytics Certification for Ong Qiren"
             className="w-full rounded-xl object-contain"
             loading="lazy"

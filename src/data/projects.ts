@@ -12,6 +12,7 @@ export type Project = {
   github: string;
   label?: string;
   image: string | null;
+  video?: string;
   galleryImages?: ProjectGalleryImage[];
   imageAlt: string;
   caption: string;
@@ -259,18 +260,20 @@ export const projects: Project[] = [
     slug: "rush-to-clean",
     github: "https://github.com/laowang0000/rush-to-clean",
     image: null,
-    imageAlt: "Rush to Clean project visual placeholder",
-    caption: "Gameplay video coming soon.",
-    placeholderText: "Gameplay video coming soon",
+    video: "/assets/projects/rush-to-clean/rush-to-clean-gameplay-demo.mp4",
+    imageAlt: "Rush to Clean gameplay demonstration video",
+    caption: "Gameplay demonstration video.",
     description:
-      "A creative game development project focused on interactive gameplay and user interaction design.",
+      "A Unity game project built with Unity 2021.3.23f1. The project includes gameplay scripts, scenes, prefabs, materials, art assets, and Unity project settings, with the Main Menu scene as its local starting point.",
     summary:
-      "A creative game development project focused on interactive gameplay and user interaction design.",
+      "A Unity game project built with Unity 2021.3.23f1, using C#, ShaderLab, and HLSL across its gameplay and visual assets.",
     tags: [
+      "Unity",
+      "C#",
+      "ShaderLab",
+      "HLSL",
       "Game Development",
       "Interactive Design",
-      "User Interaction",
-      "Software Development",
     ],
     featured: false,
   },

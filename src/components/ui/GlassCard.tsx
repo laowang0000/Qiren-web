@@ -8,7 +8,7 @@ export function GlassCard({ children, className = "", ...props }: GlassCardProps
   return (
     <div
       className={[
-        "rounded-2xl border border-white/10 bg-white/[0.055] p-6 shadow-glass backdrop-blur-md transition duration-200 hover:border-white/18 hover:bg-white/[0.075]",
+        "rounded-2xl border border-amber-100/10 bg-slate-950/45 p-6 shadow-glass backdrop-blur-sm transition duration-200 hover:border-amber-200/24 hover:bg-slate-900/55",
         className,
       ].join(" ")}
       {...props}

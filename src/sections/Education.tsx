@@ -5,7 +5,7 @@ import { profile } from "../data/profile";
 
 export function Education() {
   return (
-    <Section id="education">
+    <Section id="education" scene="quiet">
       <SectionHeading
         label="Education"
         title="Academic background"

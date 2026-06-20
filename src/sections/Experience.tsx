@@ -8,7 +8,7 @@ export function Experience() {
   const internship = experience[0];
 
   return (
-    <Section id="experience">
+    <Section id="experience" scene="observatory">
       <SectionHeading
         label="Internship Experience"
         title="Professional QA experience"
