@@ -26,7 +26,7 @@ export function Contact() {
     <Section id="contact" scene="signal">
       <SectionHeading
         label="Contact"
-        title="Connect for AI, software, and internship opportunities"
+        title="Connect for AI, software, and full-time opportunities"
         description="Available contact channels and general location for professional opportunities."
       />
       <GlassCard className="overflow-hidden">
