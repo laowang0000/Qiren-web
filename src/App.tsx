@@ -7,7 +7,6 @@ import { Certification } from "./sections/Certification";
 import { Contact } from "./sections/Contact";
 import { Education } from "./sections/Education";
 import { Experience } from "./sections/Experience";
-import { FeaturedProjects } from "./sections/FeaturedProjects";
 import { Hero } from "./sections/Hero";
 import { Projects } from "./sections/Projects";
 import { Skills } from "./sections/Skills";
@@ -23,7 +22,6 @@ export default function App() {
         <About />
         <Education />
         <Skills />
-        <FeaturedProjects />
         <Projects />
         <Experience />
         <Certification />
@@ -33,3 +31,5 @@ export default function App() {
     </div>
   );
 }
+
+

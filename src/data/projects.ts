@@ -9,7 +9,7 @@ export type Project = {
   title: string;
   name: string;
   slug: string;
-  github: string;
+  github: string | null;
   label?: string;
   image: string | null;
   video?: string;
@@ -24,6 +24,56 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    repositoryName: "TNL-Stable-V2-Submission-Package",
+    title: "Malaysia Brand Campaign Sentiment Analysis",
+    name: "Malaysia Brand Campaign Sentiment Analysis",
+    slug: "malaysia-brand-campaign-sentiment-analysis",
+    github: null,
+    label: "NLP Research Prototype",
+    image: "/assets/projects/malaysia-brand-sentiment/figure_11.png",
+    imageAlt: "Malaysia brand campaign sentiment analysis review interface",
+    caption: "ASP.NET Core Razor demo interface for analysing customer feedback sentiment.",
+    galleryImages: [
+      {
+        src: "/assets/projects/malaysia-brand-sentiment/figure_11.png",
+        alt: "Analyze Review interface for brand campaign sentiment analysis",
+        caption: "Analyze Review interface.",
+      },
+      {
+        src: "/assets/projects/malaysia-brand-sentiment/figure_04.png",
+        alt: "Three-stage RoBERTa sentiment analysis pipeline diagram",
+        caption: "Three-stage RoBERTa pipeline.",
+      },
+      {
+        src: "/assets/projects/malaysia-brand-sentiment/figure_08.png",
+        alt: "Malaysia brand campaign sentiment analysis performance chart",
+        caption: "Overall metric chart.",
+      },
+      {
+        src: "/assets/projects/malaysia-brand-sentiment/figure_09.png",
+        alt: "Per-aspect macro F1 chart for sentiment analysis",
+        caption: "Per-aspect macro F1.",
+      },
+    ],
+    description:
+      "An NLP research prototype for Malaysian brand feedback that predicts overall sentiment plus aspect-level sentiment for promotion, payment, and customer experience using a three-stage RoBERTa pipeline.",
+    summary:
+      "A Malaysian customer feedback analytics project with a balanced 600-record dataset, refined aspect labels, transformer fine-tuning, evaluation, and a local Razor dashboard for presenting the workflow.",
+    tags: [
+      "NLP",
+      "Sentiment Analysis",
+      "Aspect-Based Sentiment Analysis",
+      "RoBERTa",
+      "DeBERTa",
+      "Python",
+      "PyTorch",
+      "Hugging Face",
+      "ASP.NET Core",
+      "Razor",
+    ],
+    featured: false,
+  },
   {
     repositoryName: "web3-llm",
     title: "Web3 Finance LLM: Cryptocurrency Market Insights & Query Analyzer",
@@ -254,6 +304,130 @@ export const projects: Project[] = [
     featured: false,
   },
   {
+    repositoryName: "TES",
+    title: "Natural Language Rule-Based Plant Disease Diagnosis Expert System",
+    name: "Natural Language Rule-Based Plant Disease Diagnosis Expert System",
+    slug: "plant-disease-diagnosis-expert-system",
+    github: "https://github.com/laowang0000/TES",
+    image: null,
+    imageAlt: "Plant disease diagnosis expert system project placeholder",
+    caption: "Rule-based expert system project with natural language symptom input.",
+    placeholderText: "CLIPS expert system for plant disease diagnosis",
+    description:
+      "An expert-system project for agricultural plant disease diagnosis that maps natural language symptom descriptions into structured CLIPS facts and uses uncertainty reasoning to infer likely diseases and treatment advice.",
+    summary:
+      "A natural language rule-based plant disease diagnosis expert system using CLIPS, structured knowledge representation, certainty factors, Bayesian reasoning, and Dempster-Shafer evidence handling.",
+    tags: [
+      "Expert Systems",
+      "CLIPS",
+      "NLP",
+      "Uncertainty Reasoning",
+      "Bayesian Networks",
+      "Dempster-Shafer",
+    ],
+    featured: false,
+  },
+  {
+    repositoryName: "multi-class-waste-classification",
+    title: "Multi-Class Waste Classification via Computer Vision",
+    name: "Multi-Class Waste Classification via Computer Vision",
+    slug: "multi-class-waste-classification",
+    github: null,
+    image: null,
+    imageAlt: "Multi-class waste classification computer vision project placeholder",
+    caption: "Computer vision pipeline for classifying waste categories.",
+    placeholderText: "Computer vision waste classification pipeline",
+    description:
+      "A computer vision project for household waste classification that combines image enhancement, robust preprocessing, data augmentation, and CNN-based image classification.",
+    summary:
+      "A multi-class waste classification workflow using histogram equalization, adaptive median filtering, Sobel/Canny edge detection, augmentation, transfer learning, and classic feature baselines.",
+    tags: [
+      "Computer Vision",
+      "Deep Learning",
+      "Image Classification",
+      "CNN",
+      "ResNet",
+      "MobileNet",
+      "Feature Extraction",
+    ],
+    featured: false,
+  },
+  {
+    repositoryName: "computational-intelligence-sentiment-engine",
+    title: "Sentiment Analysis Engine via Computational Intelligence",
+    name: "Sentiment Analysis Engine via Computational Intelligence",
+    slug: "computational-intelligence-sentiment-engine",
+    github: null,
+    image: null,
+    imageAlt: "Computational intelligence sentiment analysis engine placeholder",
+    caption: "Hybrid computational intelligence approach to sentiment analysis.",
+    placeholderText: "Hybrid fuzzy, swarm, and neural sentiment engine",
+    description:
+      "A computational intelligence sentiment analysis concept that combines fuzzy rule-based interpretation, neural models, attention/Transformer features, and optimization for more explainable polarity prediction.",
+    summary:
+      "A hybrid sentiment-analysis architecture exploring fuzzy logic, swarm or evolutionary optimization, neural networks, and Transformer-style semantic representations.",
+    tags: [
+      "Computational Intelligence",
+      "Fuzzy Logic",
+      "Swarm Optimization",
+      "Neural Networks",
+      "Transformer",
+      "Sentiment Analysis",
+    ],
+    featured: false,
+  },
+  {
+    repositoryName: "hybrid-algorithm-engineering",
+    title: "Hybrid Algorithm Engineering & Cross-Repository Optimization",
+    name: "Hybrid Algorithm Engineering & Cross-Repository Optimization",
+    slug: "hybrid-algorithm-engineering",
+    github: null,
+    image: null,
+    imageAlt: "Hybrid algorithm engineering and optimization project placeholder",
+    caption: "Algorithm design project focused on benchmarking and optimization.",
+    placeholderText: "Hybrid algorithm design and benchmark testing",
+    description:
+      "An algorithm design project focused on analysing open-source implementations, diagnosing complexity and memory-use bottlenecks, and combining strategies into more efficient hybrid algorithms.",
+    summary:
+      "A cross-repository algorithm engineering workflow covering complexity analysis, divide-and-conquer, dynamic programming, heuristic search, adaptive strategy design, and automated benchmarking.",
+    tags: [
+      "Algorithm Design",
+      "Optimization",
+      "Benchmark Testing",
+      "Time Complexity",
+      "Space Complexity",
+      "Dynamic Programming",
+      "Heuristic Search",
+    ],
+    featured: false,
+  },
+  {
+    repositoryName: "enterprise-network-security-simulation",
+    title: "Enterprise Multi-Tier Network Architecture & Security Simulation",
+    name: "Enterprise Multi-Tier Network Architecture & Security Simulation",
+    slug: "enterprise-network-security-simulation",
+    github: null,
+    image: null,
+    imageAlt: "Enterprise network architecture and security simulation placeholder",
+    caption: "Cisco Packet Tracer network architecture and security simulation.",
+    placeholderText: "Enterprise network topology and security simulation",
+    description:
+      "A Cisco Packet Tracer project that designs and deploys a multi-layer enterprise network topology with departmental segmentation, dynamic routing, access controls, and disaster-recovery simulation.",
+    summary:
+      "A network architecture simulation using core-distribution-access design, VLANs, 802.1Q trunking, STP/RSTP, EtherChannel, OSPF, ACLs, NAT/PAT, and DHCP relay.",
+    tags: [
+      "Cisco Packet Tracer",
+      "Computer Networks",
+      "OSPF",
+      "VLAN",
+      "Trunking",
+      "ACL",
+      "Network Topology",
+      "Security",
+    ],
+    featured: false,
+  },
+  {
     repositoryName: "rush-to-clean",
     title: "Rush to Clean",
     name: "Rush to Clean",
@@ -278,3 +452,6 @@ export const projects: Project[] = [
     featured: false,
   },
 ];
+
+
+

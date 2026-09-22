@@ -9,7 +9,7 @@ export function Projects() {
       <SectionHeading
         label="Projects"
         title="Project index"
-        description="Five selected projects only, with repository links and verified project visuals from the provided asset pack."
+        description="A consolidated project index covering AI, Web3 analytics, NLP, computer vision, algorithms, networking, and interactive software work."
       />
       <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
         {projects.map((project) => (
@@ -19,3 +19,4 @@ export function Projects() {
     </Section>
   );
 }
+

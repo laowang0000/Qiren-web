@@ -92,16 +92,23 @@ export function ProjectCard({ project, variant = "standard" }: ProjectCardProps)
 
         <div className="mt-7 flex items-center justify-between gap-4 border-t border-white/10 pt-5">
           <p className="text-xs leading-5 text-slate-400">{project.caption}</p>
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noreferrer"
-            className="shrink-0 rounded-full border border-white/12 bg-white/[0.065] px-4 py-2 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:border-electric-blue/50 hover:bg-white/[0.1] focus:outline-none focus-visible:ring-2 focus-visible:ring-electric-blue"
-          >
-            GitHub
-          </a>
+          {project.github ? (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noreferrer"
+              className="shrink-0 rounded-full border border-white/12 bg-white/[0.065] px-4 py-2 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:border-electric-blue/50 hover:bg-white/[0.1] focus:outline-none focus-visible:ring-2 focus-visible:ring-electric-blue"
+            >
+              GitHub
+            </a>
+          ) : (
+            <span className="shrink-0 rounded-full border border-white/10 bg-white/[0.045] px-4 py-2 text-sm font-semibold text-slate-300">
+              Portfolio
+            </span>
+          )}
         </div>
       </div>
     </article>
   );
 }
+

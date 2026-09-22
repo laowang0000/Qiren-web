@@ -23,7 +23,7 @@ export function Hero() {
         </div>
       }
     >
-      <div className="relative flex min-h-[calc(100vh-10rem)] min-w-0 items-center">
+      <div className="relative grid min-h-[calc(100vh-10rem)] min-w-0 items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(18rem,24rem)]">
         <div className="hero-copy min-w-0 max-w-3xl">
           <p className="hero-traveller-signature">OQR // FIELD NOTES</p>
           <h1 className="text-4xl font-semibold leading-[1.02] text-white sm:text-6xl lg:text-7xl">
@@ -36,7 +36,7 @@ export function Hero() {
             {heroIntro}
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
-            <Button href="#featured-projects" variant="primary">
+            <Button href="#projects" variant="primary">
               View Projects
             </Button>
             <Button
@@ -58,7 +58,20 @@ export function Hero() {
             <Button href="#contact">Contact Me</Button>
           </div>
         </div>
+        <div className="hero-portrait-wrap" aria-label="Portrait of Ong Qi Ren">
+          <img
+            src={assetUrl("/assets/site/portrait_home_headshot_final.jpg")}
+            alt="Ong Qi Ren portrait"
+            className="hero-portrait"
+          />
+        </div>
       </div>
     </Section>
   );
 }
+
+
+
+
+
+
